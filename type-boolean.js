@@ -3,7 +3,8 @@ const segundoNumero = 5;
 
 /// tipo booleano
 // true -> verdadeiro
-// false -> false
+// false -> falseusamos o '===' para comparar valores
+// 
 
 /*console.log(primeiroNumero === segundoNumero);*/
 
