@@ -1,6 +1,5 @@
 # JavaScript - Estudos
 
-
 <h1>Introdução ao JavaScript</h1>
 
 - Linguagem Dinâmica
@@ -217,8 +216,6 @@ Parâmetros x Argumentos
   }
   ```
 
-
-
 <h3>Array</h3>
 
 - Pode ser definido como uma lista ordenada de valores enumerados
@@ -248,8 +245,7 @@ const arrayDeStrings = ["banana", "alura", "Juliana"];
 - Ela especifica o tamanho de um array
 - Ela traz o número de elementos, a quantidade de dados, separados por vírgula,  contidos no array
 
-
-Métodos
+<h2>Métodos</h2>
 
 - São funções que servem como uma propriedade do array ou de um objeto
 - pode realizar tarefas pré-definidas usando os dados do array e dos parametros
@@ -261,98 +257,104 @@ concat()
 - junta dois arrays, colocando o array passado como argumento, logo depois do primeiro
 - nao altera o array no qual foi chamado, entao, precisamos salvar o resultado em um novo array
 
-
-
 filter()
 
 * Retorna uma lista contando todos os elementos que passaram em um teste, ou seja, uma função escrita por nós.
 * Não altera o array onde foi chamado, então precisamos salvar esse resultado em um novo array.
 
-
 find()
 
 * Funciona de forma parecida com o filter, porém retorna apenas o primeiro valor que satisfizer o teste, podendo ser uma string ou um número.
-
 
 findIndex()
 
 * Funciona igual o `find()`, mas retorna o índice em vez do elemento, possibilitando usá-lo em outras partes do código.
 
-
 indexOf()
 
 * Localiza e retorna o índice referente à primeira ocorrência de determinado valor em um array. Caso não exista nenhuma ocorrência do valor, retorna `-1`.
 
-
 lastIndexOf()
 
 * Funciona da mesma forma que o `indexOf()`, porém retorna o índice referente à *última* ocorrência de um valor em um array, varrendo o array de trás para frente.
-
 
 forEach()
 
 * Executa uma função em cada elemento do array de forma individual.
 * Não altera o array original e nem retorna um valor, deixando esse trabalho a cargo da função escolhida.
 
-
 pop()
 
 * Retira o último elemento do array.
 * Altera o array original removendo o elemento.
-
 
 shift()
 
 * Retira o primeiro elemento do array.
 * Altera o array original removendo o elemento e trocando o índice de todos os elementos para um a menos do que eram, o índice 1 passa a ser o 0, o 2 passa a ser o 1, e assim por diante.
 
-
 push()
 
 * Adiciona o elemento passado como parâmetro do array, porém na última posição.
 * Altera o array original com o novo valor.
-
 
 unshift()
 
 * Funciona igual ao `push()`, porém adiciona na primeira posição e acaba trocando o índice de todos os elementos.
 * Altera o array original com o novo valor.
 
-
 reduce()
 
 * Utiliza uma função definida pelo usuário em cada um dos elementos, guardando o resultado em uma variável que pode ser acessada dentro da função que foi definida, retornando um único valor no final, reduzindo o array para um único valor.
 
+1) O método `reduce()` está trabalhando com dois parâmetros. O primeiro é a **função callback** obrigatória para retornar o cálculo e o segundo parâmetro é um número que representa o valor inicial - no caso, `0`
+2) A função callback foi escrita diretamente dentro do `reduce()`, e esta função também está recebendo dois parâmetros, ambos obrigatórios: O valor acumulado e o valor atual.
+3) A função callback foi escrita na forma de arrow function; nesse caso, quando só temos uma linha de instrução dentro da função (`atual + acum`) não precisamos usar chaves e nem da palavra-chave `return`.
 
 reduceRight()
 
 * Funciona igual o `reduce()` porém começa do final do array e segue até o início.
 
-
 reverse()
 
 * Inverte a ordem dos elementos do array, então o primeiro vira o último, o segundo o penúltimo e assim por diante.
-
 
 slice()
 
 * Copia uma parte do array para outro array.
 
-
 sort()
 
 * Organiza o array de acordo com a classificação Unicode, onde os números vêm antes das letras, porém não funciona corretamente para números, onde temos que definir uma função que irá auxiliar o comando.
-
 
 splice()
 
 * Consegue remover, um ou mais elementos consecutivos caso o segundo parâmetro tenha um valor maior que 0, e incluir um ou mais elementos a partir de um índice escolhido.
 
 
+<h2>Matrizes</h2>
+
+Uma forma de chamar as Arrays de 2 dimensões
+
+Podem ser visualizaddas como uma tabela de Excel
+
+Cada campo representa um elemento, onde precisamos de uma linha e uma coluna para acessar um campo
+
+[]  -- Linha
+
+[]  -- Coluna
+
+
+Laços de Repetição
+
+For - Ferramentas essenciais, utilizadas para percorrer arrays e executar blocos de código para cada elemento
 
 
 
-<h1>Links de Documentação `</h1>`
+Callbacks
+
+
+<h1>Links de Documentação </h1>
 
 Documentação do Math = "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math#description"
 
