@@ -1,4 +1,6 @@
-var respostaDeTudo = 42
+// node exercicios.js
+
+/*var respostaDeTudo = 42
 let idade = 29
 const pi = 3.14
 
@@ -9,4 +11,16 @@ const pi = 3.14
     console.log(respostaDeTudo, idade, pi)
 
 }
-console.log(respostaDeTudo, idade, pi)
+console.log(respostaDeTudo, idade, pi)*/
+
+
+const a = [];
+const b = 20;
+const c = true ;
+const d = '';
+
+if (b === 20 && c != false && d == 0) {
+    console.log('Verdade')
+}else {
+    console.log('Falso')
+}
