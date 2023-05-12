@@ -84,6 +84,85 @@ Funções
 
 
 
+Função sem retorno e sem parâmetro
+
+- Executa a instrução, sem a necessiade de disponibilizar o resultado para o restante do código;
+  Ex:
+
+```scss
+function cumprimentar(){
+ console.log('oi gente!')
+}
+
+cumprimentar()
+```
+
+
+Função sem retorno, com parâmetro
+
+- A função recebe, via parâmentro, um valor ou dado.
+- Dessa forma é possível reaproveitar a função para que funcione de maneira parecida com qualquer outro valor ou dado.
+  Ex:
+
+```javascript
+function cumprimentaPessoa(pessoa){
+ console.log(`oi, ${pessoa}!`)
+}
+
+cumprimentaPessoa('Helena')
+```
+
+
+Função com retorno, sem parâmetro
+
+- Combina funções para que cada uma controle apenas uma parte do código e elas trabalhem juntas
+- É uma boa prática e facilita na construção de estruturas mais complexas, delegando uma atividade a cada função
+- A função fica disponível para outras partes de um mesmo programa
+  Ex:
+
+```javascript
+function cumprimentar(){
+ return 'Oi gente!'
+}
+
+function cumprimentaPessoa(nomePessoa) {
+ console.log(`${cumprimentar()} Meu nome é ${nomePessoa}`)
+}
+
+cumprimentaPessoa('Paula') // “Oi gente! Meu nome é Paula”
+```
+
+
+Função com Return e mais de um parâmetro
+
+- O JavaScript identifica os parâmetros pela ordem de acordo com o estabelecido na função e declarado na entrada da função
+  Ex:
+
+```scss
+function operacaoMatematica(numero1, numero2, numero3) {
+ return numero1 + numero2 + numero3
+}
+
+operacaoMatematica(15, 30, 45) // 90
+```
+
+
+Parâmetros x Argumentos
+
+- Na prática, se referem ao mesmo tipo de dado
+- Algumas documentações se referem a `<i>`parâmetros `</i>` no momento em que a função é definida
+  - ex: (numero1, numero2, numero3);
+- Argumentos como dados que utilizamos para executar a função
+  - ex: (15, 30, 45);
+
+
+
+
+
+
+
+
+
 Documentação do Math = "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math#description"
 
 Math.round(): Faz o arredondamento (round em inglês) de um número de ponto flutuante para o inteiro mais próximo.
