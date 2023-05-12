@@ -157,7 +157,79 @@ Parâmetros x Argumentos
 
 
 
+Condicional
 
+- As estruturas condicionais permitem que o código se ramifique e tome "Caminhos" diferentes de acordo com a condição fornecida.
+- Estrutura feita para definir o fluxo dos programas
+- If - Se
+
+  - A condição é sempre uma expressão que deverá ser avaliadda e retunar um valor TRUE ou FALSE.
+  - O bloco de código dentro do IF só será executado caso a expressão retorne TRUE
+  - ex:
+
+  ```js
+  const num = 10;
+
+  if (num !== null) {
+   console.log(`o número é ${num}`);
+  }
+  ```
+- Multiplas Condições - Operadores && (And) ou OR( || )
+- ex:
+
+  ```js
+  const num = 11;
+
+  if (num > 10 || !num) {
+   console.log('número não válido');
+  }
+  ```
+
+  ```js
+  const num = 11;
+
+  if (num > 10 && num < 20) {
+   console.log('número válido');
+  }
+  ```
+- if...else
+
+  - adicionam a cláusula else para ser executada quando a condição do if retorna false
+  - podemos ler como "ser...senão"
+  - "se uma dada condição for verddadeira execute um determinado código; senão, execute outro código".
+  - ex:
+
+  ```js
+  function verificaNumero(numero) {
+      if (numero > 10) {
+           return 'número maior que 10';
+      } else {
+          return 'número não é maior que 10';
+      }
+  }
+
+  console.log(verificaNumero(9)) //número não é maior que 10
+  ```
+- else if
+
+  - em alguns casos é necessário mais de duas opções de fluxo para o código
+  - pode receber parâmetros direto na abertura da função, ao contrário do else puro
+  - As condições de cada else if devem ser excludentes entre si, não pode haver ambiguidade entre as condições
+  - ex:
+
+  ```js
+  const num = 15;
+
+  if (num >= 0 && num <= 10) {
+    console.log('número entre zero e dez');
+  } else if (num > 10 && num <= 20) {
+    console.log('número entre dez e vinte');
+  } else if (num > 20 && num <= 30) {
+    console.log('número entre vinte e trinta');
+  } else {
+    console.log('outro número');
+  }
+  ```
 
 
 

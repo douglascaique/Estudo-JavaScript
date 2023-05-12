@@ -24,3 +24,21 @@ if (b === 20 && c != false && d == 0) {
 }else {
     console.log('Falso')
 }
+
+// exercicio de refatoração para função
+
+/*const num1 = 5;
+const num2 = 5;
+const resultado = num1 + num2;
+*/
+
+//function soma(num1, num2) {
+//    return num1 + num2;
+//};
+   
+ 
+
+  const calculo = soma => (num1, num2);
+
+
+   
