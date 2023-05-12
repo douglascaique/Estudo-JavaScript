@@ -17,8 +17,8 @@ console.log(numero + numeroString);
 
 numeroString = Number("456");
 // conversao explicita
-//Number() - transforma o valor em número|inteiro
-//String()
+//Number() - CONVERTE DADOS em número|inteiro
+//String() - CONVERTE DADOS em texto
 
 //console.log(numero + Number(numeroString));
 console.log(numero + numeroString);
