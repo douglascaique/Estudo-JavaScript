@@ -349,7 +349,6 @@ For - Ferramentas essenciais, utilizadas para percorrer arrays e executar blocos
 
 ## Callbacks
 
-
 ## JSON
 
 JavaScript Object Notation ou Notação de objeto JavaScript
@@ -395,14 +394,37 @@ JavaScript Object Notation ou Notação de objeto JavaScript
   * O JSON aceita como valores apenas dados primitivos (`string`, `number` para números finitos, `true`, `false` e `null`), objetos e arrays. Não é possível declarar funções/métodos;
   * Não são permitidas vírgulas após o último conjunto de chave/valor do objeto.
 
-
  *JSON é um formato criado para transferência de dados* , sendo assim é necessário convertê-lo para um objeto JavaScript para que os dados possam ser utilizados em um programa. Para isso, existem dois métodos nativos:
 
 * `JSON.parse()`: converte JSON para um objeto JavaScript;
 * `JSON.stringify()`: converte um objeto JavaScript para o formato JSON.
 
 
-<h1>Links de Documentação </h1>
+Orientação a Objetos
+
+- É um Paradigma
+- É um modelo (estilo) de se programar
+- a ideia é trazer pro código, conceitos que vemos no mundo real
+- Transformar coisas do mundo real para código
+- o que são classes?
+  - são modelos usados para criação de objetos
+  - define atributos (características) e os métodos(comportamentos) de um objeto
+  - define o modelo base usado na criação de objetos na memória do computador
+- Herança
+  - é um mecanismo que permite que uma classe herde características de uma outra classe
+- Objeto
+  - é a instancia de uma classe
+- Na construção de uma clase em JS, além da palavra reservada class, devemos também definir uma função construtura - que inicializa as propriedades do objeto - quando ele for criado
+- 
+
+
+Palavra chave this   --- estudar isso aqui depois
+
+- call()
+- apply()
+- blind()
+
+`<h1>`Links de Documentação `</h1>`
 
 Documentação do Math = "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math#description"
 
