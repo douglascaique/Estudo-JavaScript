@@ -331,7 +331,6 @@ splice()
 
 * Consegue remover, um ou mais elementos consecutivos caso o segundo parâmetro tenha um valor maior que 0, e incluir um ou mais elementos a partir de um índice escolhido.
 
-
 <h2>Matrizes</h2>
 
 Uma forma de chamar as Arrays de 2 dimensões
@@ -344,14 +343,63 @@ Cada campo representa um elemento, onde precisamos de uma linha e uma coluna par
 
 []  -- Coluna
 
-
-Laços de Repetição
+## Laços de Repetição
 
 For - Ferramentas essenciais, utilizadas para percorrer arrays e executar blocos de código para cada elemento
 
+## Callbacks
 
 
-Callbacks
+## JSON
+
+JavaScript Object Notation ou Notação de objeto JavaScript
+
+- FOrmato que utiliza a sintaxe de objetos e arrays do JS
+- Versátil
+- forma mais comum de estrutura para transferência de dados entre cliente/servidor
+- tem sido utilizado mesmo em programas que não utilizam JS
+
+  - ex:
+
+  ```json
+  {
+   "editora": "Casa do Código",
+   "catalogo": [
+   {
+     "id": 50,
+     "titulo": "Primeiros Passos com NodeJS",
+     "autor": "João Rubens",
+     "categoria": "programação",
+     "versoes": ["ebook", "impresso"]
+   },
+   {
+     "id": 59,
+     "titulo": "ECMAScript 6",
+     "autor": "Diego Martins de Pinho",
+     "categoria": "programação",
+     "versoes": ["ebook"]
+   },
+   {
+   "id": 39,
+   "titulo": "Orientação a Objetos",
+   "autor": "Thiago Leite",
+   "categoria": "programação",
+   "versoes": ["ebook", "impresso"]
+   }
+  ]}
+  ```
+
+  As diferenças de sintaxe entre JSON e um objeto JavaScript são:
+
+  * No JSON, as chaves sempre devem estar entre aspas duplas `” ”`, no formato `string`. Já no objeto JavaScript, as aspas não são obrigatórias;
+  * O JSON aceita como valores apenas dados primitivos (`string`, `number` para números finitos, `true`, `false` e `null`), objetos e arrays. Não é possível declarar funções/métodos;
+  * Não são permitidas vírgulas após o último conjunto de chave/valor do objeto.
+
+
+ *JSON é um formato criado para transferência de dados* , sendo assim é necessário convertê-lo para um objeto JavaScript para que os dados possam ser utilizados em um programa. Para isso, existem dois métodos nativos:
+
+* `JSON.parse()`: converte JSON para um objeto JavaScript;
+* `JSON.stringify()`: converte um objeto JavaScript para o formato JSON.
 
 
 <h1>Links de Documentação </h1>
