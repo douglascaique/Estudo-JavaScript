@@ -31,7 +31,7 @@ function classificaImc(imc) {
         return `Seu IMC é ${imc}, você está em Obesidade Grave!`
 }
 
-function main() {
+function informaIMC() {
     const peso = 75;
     const altura = 1.75;
 
@@ -40,7 +40,7 @@ function main() {
     console.log(classificaImc(imc));
 }
 
-main();
+informaIMC();
 
 
 
