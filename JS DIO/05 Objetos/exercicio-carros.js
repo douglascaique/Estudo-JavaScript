@@ -5,7 +5,7 @@ Crie um método que dado a quantidade de quilómetros e o preço do combustível
 gasto em reais para realizar este percurso.
 */
 
-class carros {
+class carro {
     marca;
     cor;
     litroPorKm;
@@ -19,11 +19,16 @@ class carros {
     descrever() {
         console.log(`O carro da ${this.marca} da cor ${this.cor}, roda ${this.litroPorKm}L por Km`)
     }
+
+    calcularGastoDePercurso(distancia, precoCombustivel) {
+
+        return distancia * (precoCombustivel * this.litroPorKm);
+    }
 }
 
-function valorPorKm(km, precoCombustivel) {
-    valorPorKm = precoCombustivel * km
-}
 
-const km = 100;
-const precoCombustivel = 3.80;
+const uno = new carro('Fiat', 'Amarelo', 1 / 15);
+const palio = new carro('Fiat', 'Preto', 1 / 10)
+
+console.log(uno.calcularGastoDePercurso(70, 5));
+console.log(palio.calcularGastoDePercurso(70, 5))
