@@ -5,8 +5,8 @@ const listaCPFs = ["12345658789", "1215154848", "11122233345"]
 // O objeto é a estrutura de dados mais importante do Java Script
 //objeto - Formado pela cadeia Chave. Valor
 const cliente = {
-    nome:"Andre",
-    idade:35,
-    cpf:"4565655656",
-    email:"andre@email.com"
+    nome: "Andre",
+    idade: 35,
+    cpf: "4565655656",
+    email: "andre@email.com",
 }
